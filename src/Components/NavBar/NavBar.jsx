@@ -1,0 +1,48 @@
+import { IoMdClose } from "react-icons/io";
+import { GoDeviceDesktop } from "react-icons/go";
+import { IoLaptopOutline } from "react-icons/io5";
+import { HiOutlineDeviceTablet } from "react-icons/hi";
+import { LiaTabletSolid } from "react-icons/lia";
+
+export default function NavBar() {
+  return (
+    <header className="text-gray-600 body-font">
+      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-gray-100">
+        <a className="flex title-font font-bold items-center text-gray-600 mb-4 md:mb-0">
+          <svg
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="square"
+            strokeLinejoin="square"
+            strokeWidth="2"
+            className="w-5 h-5 text-white p-2 bg-blue-500 rounded-full"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span className="ml-3 text-xxl">nicepage</span>
+        </a>
+        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          <a className="mr-7 hover:text-gray-900 text-gray-500">
+            <GoDeviceDesktop />
+          </a>
+          <a className="mr-7 hover:text-gray-900 text-gray-500">
+            <IoLaptopOutline />
+          </a>
+          <a className="mr-7 hover:text-gray-900 text-gray-500">
+            <HiOutlineDeviceTablet />
+          </a>
+          <a className="mr-7 hover:text-gray-900 text-gray-500">
+            <LiaTabletSolid />
+          </a>
+          <a className="mr-7 hover:text-gray-900 text-gray-500">
+            <HiOutlineDeviceTablet />
+          </a>
+        </nav>
+        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+          <IoMdClose />
+        </button>
+      </div>
+    </header>
+  );
+}
